@@ -15,5 +15,7 @@ func (app *application) routes() http.Handler {
 
 	mux.Get("/", app.Home)
 
+	mux.Get("/coordinates", app.GetCoordinates)
+
 	return mux
 }
